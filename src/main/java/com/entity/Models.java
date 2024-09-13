@@ -8,11 +8,12 @@ import java.io.Serializable;
 public class Models implements Serializable {
     @Id
     @Column(name = "id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = javax.persistence.GenerationType.IDENTITY)
     private int id;
 
     @Column(name = "name", length = 45, nullable = false)
     private String name;
+
 
     @ManyToOne
     @JoinColumn(name = "category_id")

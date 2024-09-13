@@ -8,7 +8,6 @@ async function loadProduct() {
         throw new Error("Error");
     }
     const data = await response.json();
-    console.log(data)
     if (!data.success) {
         alert(data.message);
     }
@@ -82,4 +81,12 @@ async function addProduct() {
             method: 'POST',
             body: formData
         });
+    if (!response.ok) {
+        throw new Error("Error");
+    }
+    const data = await response.json();
+    if (!data.success) {
+        alert(data.message);
+    }
+    alert(data.message);
 }

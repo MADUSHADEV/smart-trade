@@ -19,5 +19,7 @@
         <mapping class="com.entity.ProductCondition"/>
         <mapping class="com.entity.Color"/>
         <mapping class="com.entity.Storage"/>
+        <mapping class="com.entity.ProductStatus"/>
+        <mapping class="com.entity.Product"/>
     </session-factory>
 </hibernate-configuration>

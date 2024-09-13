@@ -54,9 +54,10 @@ public class SignIn extends HttpServlet {
             } else {
                 responseDto.setMessage("Invalid email or password");
             }
-//            session.close();
+            session.close();
         }
         resp.setContentType("application/json");
         resp.getWriter().write(new Gson().toJson(responseDto));
+
     }
 }
